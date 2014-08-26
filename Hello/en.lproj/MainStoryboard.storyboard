@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A510d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Vui lòng nhập tên của bạn vào ô bên dưới:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="pis-4F-jcS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="vHV-DA-gky"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Họ và tên" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yhu-sQ-O5E">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="zJF-Uw-Dmr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygv-lY-jVc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="936-ng-cuz"/>
+                                    <constraint firstAttribute="height" constant="33" id="Le9-dR-vr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Xác nhận">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="XacNhan:" destination="2" eventType="touchUpInside" id="0di-zy-fHl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bạn vừa nhập vào tên:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtX-BZ-f7f">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TÊN SẼ HIỂN THỊ Ở ĐÂY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="esJ-ao-aCm">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="hBw-Qy-LQ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XtX-BZ-f7f" firstAttribute="centerX" secondItem="ygv-lY-jVc" secondAttribute="centerX" type="default" id="0q3-CV-6mA"/>
+                            <constraint firstItem="pis-4F-jcS" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="36s-Yr-fCP"/>
+                            <constraint firstAttribute="trailing" secondItem="esJ-ao-aCm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5c2-e1-n88"/>
+                            <constraint firstItem="esJ-ao-aCm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="IRn-SU-I35"/>
+                            <constraint firstItem="Yhu-sQ-O5E" firstAttribute="top" secondItem="pis-4F-jcS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="IfN-GB-pDR"/>
+                            <constraint firstItem="ygv-lY-jVc" firstAttribute="top" secondItem="Yhu-sQ-O5E" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Lux-je-qw8"/>
+                            <constraint firstAttribute="trailing" secondItem="pis-4F-jcS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Rzo-Jb-Vrd"/>
+                            <constraint firstItem="ygv-lY-jVc" firstAttribute="centerX" secondItem="Yhu-sQ-O5E" secondAttribute="centerX" type="default" id="Wcs-u3-jEZ"/>
+                            <constraint firstItem="XtX-BZ-f7f" firstAttribute="top" secondItem="ygv-lY-jVc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cur-Gf-gOI"/>
+                            <constraint firstItem="esJ-ao-aCm" firstAttribute="centerX" secondItem="XtX-BZ-f7f" secondAttribute="centerX" type="default" id="dln-M0-NhR"/>
+                            <constraint firstItem="pis-4F-jcS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="iK8-cR-UbZ"/>
+                            <constraint firstItem="esJ-ao-aCm" firstAttribute="top" secondItem="XtX-BZ-f7f" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uMD-o6-Vv8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HoVaTen" destination="esJ-ao-aCm" id="y9h-P6-0Ch"/>
+                        <outlet property="Name" destination="Yhu-sQ-O5E" id="a0m-sB-Ci9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="17"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="XacNhan:"/>
+                <relationship kind="outlet" name="HoVaTen" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="Name" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

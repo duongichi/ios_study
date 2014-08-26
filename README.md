@@ -6,4 +6,4 @@ ios_study
 2.  Chương trình Hello
 Nhập tên vào textbox, sau khi ấn ok thì show tên lại. 
 
-3. Chương trình máy tính
+3. Chương trình máy tính cộng trử nhân chia
