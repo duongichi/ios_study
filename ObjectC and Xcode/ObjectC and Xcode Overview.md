@@ -2,11 +2,11 @@
 
 1. Overview
 
-​Mở Xcode lên -> New Project -> Chọn Single View Application -> Điền thông tin về Project<br>
-Trong MainStoryboard.storyboard  có màn hình iphone, đây là ViewController. <br>
-Viết code trong file "ViewController.m" và "ViewController.h".<br>
-Thiết kế giao diện trong Storyboard.<br>
-Sau khi thiết kế xong giao diện trong Storyboard,  các giao diện trong Storyboard đc gán sang file hear, file main gọi các đối tượng trong header file. <br>
+​– Mở Xcode lên -> New Project -> Chọn Single View Application -> Điền thông tin về Project<br>
+– Trong MainStoryboard.storyboard  có màn hình iphone, đây là ViewController. <br>
+– Viết code trong file "ViewController.m" và "ViewController.h".<br>
+– Thiết kế giao diện trong Storyboard.<br>
+– Sau khi thiết kế xong giao diện trong Storyboard,  các giao diện trong Storyboard đc gán sang file hear, file main gọi các đối tượng trong header file. <br>
 
 2. Biến, hằng số, cấu trúc điều khiển và hàm - class của Objective-C tương tự như ngôn ngữ C. 
 
